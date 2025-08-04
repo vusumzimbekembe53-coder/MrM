@@ -1,0 +1,102 @@
+
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --accent: #00b894;
+    }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --accent: #00cec9;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--bg);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .theme-toggle {
+      cursor: pointer;
+      padding: 0.4rem 1rem;
+      border: 1px solid var(--accent);
+      background: none;
+      color: var(--accent);
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .button {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .services ul, .projects ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li, .projects li {
+      margin-bottom: 1rem;
+      background: rgba(0,0,0,0.03);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .projects a {
+      margin-right: 1rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .button { font-size: 0.9rem; }
+    }
+  
